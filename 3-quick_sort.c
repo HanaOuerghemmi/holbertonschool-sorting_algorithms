@@ -1,7 +1,6 @@
 #include "sort.h"
 void quicksort(int *array,int first,int last,size_t sizeArray)
 {
-    
    int i, j, pivot, temp;
    if(first<last){
       pivot=first;
