@@ -1,6 +1,6 @@
 #include "sort.h"
 /**
- * insertion_sort_list - function that sort selction
+ * insertion_sort_list - function that sort  list
  * @list: the list
  */
 void insertion_sort_list(listint_t **list)
@@ -8,6 +8,8 @@ void insertion_sort_list(listint_t **list)
 	struct listint_s *currentNode, *swapNode, *prevNode;
 
 
+	if (*list == NULL)
+		return;
 
 
 	currentNode = *list;
