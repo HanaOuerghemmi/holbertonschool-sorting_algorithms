@@ -1,17 +1,20 @@
 #include "sort.h"
 /**
- * selection_sort - function that sort selction
- * @array: array
- * @size: size of the array
+ * insertion_sort_list - function that sort selction
+ * @list: the list
  */
 void insertion_sort_list(listint_t **list)
 {
 	struct listint_s *currentNode, *swapNode, *prevNode;
+
+
+
+
 	currentNode = *list;
-	while((currentNode = currentNode->next))
+	while ((currentNode = currentNode->next))
 	{
 		swapNode = currentNode;
-		while(currentNode->prev != NULL 
+		while (currentNode->prev != NULL
 				&& currentNode->prev->n > currentNode->n)
 		{
 			prevNode = currentNode->prev;
@@ -35,7 +38,7 @@ void insertion_sort_list(listint_t **list)
 
 		}
 
-	}	
+	}
 }
 
 
