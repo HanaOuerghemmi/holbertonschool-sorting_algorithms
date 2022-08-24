@@ -8,7 +8,7 @@ void insertion_sort_list(listint_t **list)
 	struct listint_s *currentNode, *swapNode, *prevNode;
 
 
-	if (*list == NULL || list == NULL)
+	if (list == NULL || *list == NULL)
 		return;
 
 
