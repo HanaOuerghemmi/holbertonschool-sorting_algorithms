@@ -15,6 +15,7 @@ void quicksort(int *array,int first,int last,size_t sizeArray)
             temp=array[i];
             array[i]=array[j];
             array[j]=temp;
+			print_array(array,  sizeArray);
          }
       }
       temp=array[pivot];
@@ -22,7 +23,6 @@ void quicksort(int *array,int first,int last,size_t sizeArray)
       array[j]=temp;
       quicksort(array,first,j-1,sizeArray);
       quicksort(array,j+1,last,sizeArray);
-			print_array(array, sizeArray);
    }
 }
 void quick_sort(int *array, size_t size)
