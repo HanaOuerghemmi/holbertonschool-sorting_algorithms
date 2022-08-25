@@ -17,15 +17,9 @@ void selection_sort(int *array, size_t size)
 				indexMin = j;
 		if (indexMin != i)
 		{
-			/** swap 
-			  min = array[indexMin];
-			  array[indexMin] = array[i];
-			  array[i] = min;
-			  */
 			swap( &array[indexMin], &array[i]);
-			print_array(array, size);
+			print_array( array, size);
 		}
-
 	}
 }
 
